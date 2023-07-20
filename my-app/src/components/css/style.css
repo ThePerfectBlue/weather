@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.body{
+    background: #f3f2ef;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Jost', sans-serif;
+}
+
+html {
+    font-size: 100%;
+    height: 100%;
+}
+
+.box{
+    width:25vw;
+    height: 60vh;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 3rem rgba(0,0,0,0.2);
+    background-color: rgb(161, 197, 212);
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    min-width: 20rem;
+    min-height: 20rem;  
+    margin-left: 37.4%;
+    
+}
+
+.wave{
+    opacity: 0.3;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    background: white;
+    width: 50rem;
+    height: 50rem;
+    margin-left: -25rem;
+    margin-top: -20rem;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    z-index: 1;
+}
+
+.wave.-two{
+    animation: drift 7000ms infinite linear;
+    opacity: 0.1;
+    z-index: 3 !important;
+}
+
+.box::after{
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    transform: translate3d(0,0,0);
+}
+
+#date{
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #57606f;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.temp{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.tempmin_max {
+    text-align: center;
+    margin-top: 0.3rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #565e6c;
+}
+
+.info{
+    margin-top: 50px;
+}
+
+.location{
+    text-align: center;
+    font-size: 3.5rem;
+    
+}
+
+#weathercon{
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+body > span {
+    width: 100vw;
+    text-align: center;
+    color: grey;
+}
+
+.inputData{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputField{
+    width: 70%;
+    height: 7vh;
+    margin: auto;
+    border-radius: 5rem;
+    padding: 1rem 1rem;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.errorMsg{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem auto;
+}
